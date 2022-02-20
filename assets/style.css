@@ -2,9 +2,28 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    height: 100%;
 }
 
-main {
+.side {
+    background-image: url("./leaves.jpg");
+    position: relative;
+    flex: 1 0 25%;
+    height: 100vh;
+}
+
+.dark-area {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    top: 10%;
+    width: 100%;
+
+}
+
+.main {
     display: flex;
     flex-direction: column;
+    flex: 1 0 auto;
 }
+
