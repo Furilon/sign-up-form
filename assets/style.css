@@ -3,20 +3,26 @@
     src: url("./Norse-Bold.otf");
 }
 
+.italicized {
+    font-style: italic;
+}
+
 body {
     margin: 0;
     padding: 0;
     display: flex;
     height: 100%;
-    font-size: 14px;
+    font-size: 48px;
+    overflow: hidden;
 }
 
 .side {
     background: url("./leaves.jpg") center;
-    width: max(1000px, 30vw);
+    width: max(1500px, 30vw);
     position: relative;
     flex: 1 0 25%;
     height: 100vh;
+    font-family: odin-font, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .dark-area {
@@ -29,8 +35,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    font-family: odin-font, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2vw;
+    
 }
 
 .dark-area > img {
@@ -42,13 +48,116 @@ body {
     flex-direction: column;
     flex: 1 0 auto;
     justify-content: flex-start;
+    font-size: 16px;
+    max-height: 100%;
+    align-items: flex-start;
+    width: 70%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top {
+    margin: 200px 300px 50px 0;
+    padding-left: 50px;
+    font-weight: 600;
+    max-width: 90%;
+    line-height: 1.8rem;
+    font-size: 1.7rem;
+}
+
+.top > p {
+    max-width: 55ch;
+}
+
+.middle {
+    padding-left: 50px;
+    box-shadow: 0px 3px 10px rgb(170, 170, 170);
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.middle > p {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    margin: 20px 0;
+}
+
+.form-left, .form-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 150px;
+}
+
+input {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    width: min(330px, 150px + 10vw);
+    height: 30px;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+input:focus {
+    box-shadow: 0 2px 3px gray;
+    border: 1px solid blue;
+}
+
+input:valid {
+    border: 1px solid green
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+    border: 1px solid red;
+    background-color: pink;
+}
+
+input:invalid:not(:placeholder-shown) {
+    background-color: white;
+}
+
+.bottom {
+    padding-left: 50px;
+    font-size: 1.4rem;
+}
+
+button {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 10px 50px;
+    min-width: 200px;
+    min-height: 50px;
+    color: white;
+    background-color: #596D48;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px rgb(170, 170, 170);
+    border: none;
+}
+
+button:hover {
+
+    background-color: #536444;
+}
+
+a {
+    color: #596D48
+}
+
+a:hover {
+    color: #3a4630;
 }
 
 
 
-.italicized {
-    font-style: italic;
-}
+
 
 
 

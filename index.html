@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./assets/style.css" />
+        <script src="./index.js"></script>
         <title>Sign up</title>
     </head>
     <body>
@@ -37,23 +38,29 @@
                 <p>You <span class="italicized">know</span> you want to.</p>
             </div>
             <div class="middle">
-                <h3>Let's do this!</h3>
+                <p>Let's do this!</p>
                 <form action="#">
                     <div class="form-left">
-                        <label for="first">First name</label>
-                        <input type="text" id="first" name="first" required />
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required />
-                        <label for="pass">Password</label>
-                        <input type="text" id="pass" name="pass" required />
+                        <label for="first">FIRST NAME</label>
+                        <input
+                            type="text"
+                            id="first"
+                            name="first"
+                            placeholder=" "
+                            required
+                        />
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" placeholder=" " required />
+                        <label for="pass">PASSWORD</label>
+                        <input type="password" id="pass" name="pass" placeholder=" " required />
                     </div>
                     <div class="form-right">
-                        <label for="last">Last name</label>
-                        <input type="text" id="last" name="last" required />
-                        <label for="tel">Phone Number</label>
-                        <input type="tel" id="tel" name="tel" />
-                        <label for="conf">Confirm Password</label>
-                        <input type="conf" id="conf" name="conf" required />
+                        <label for="last">LAST NAME</label>
+                        <input type="text" id="last" name="last" placeholder=" " required />
+                        <label for="tel">PHONE NUMBER</label>
+                        <input type="tel" id="tel" name="tel" placeholder=" " required/>
+                        <label for="conf">CONFIRM PASSWORD</label>
+                        <input type="password" id="conf" name="conf" placeholder=" " required />
                     </div>
                 </form>
             </div>
